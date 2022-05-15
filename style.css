@@ -125,3 +125,7 @@ h1 {
 p {
     font-size:2em;
 }
+
+.logo {
+    max-width:10em;
+}
