@@ -9,7 +9,7 @@
     brief:      ...
 */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 body {
     padding: 2em;
@@ -31,7 +31,7 @@ footer {
 	font-size: 2em;
 }
 
-.ProduktDesignation {
+.productDesignation {
     text-transform: uppercase;
     text-align: left;
 }
@@ -46,6 +46,12 @@ ul {
     margin: 1em;
 }
 
+.flexboxInPageNavigation {
+    display: flex;
+    display: inline-block;
+    justify-content: space-between;
+    justify-content: center;
+}
 .inPageNavigation {
     background-color:  #800080;
     color: #23ada4;
@@ -99,8 +105,11 @@ section:first-of-type {
 
 .Rezension {
     border-top: palevioletred;
-    /*Die Rezensionen von der Produktdetailseite sollen von horizontalen Strichen abgegrenzt werden. 
-    Verwende dafür ausschließlich CSS-Eigenschaften. Das HTML-Tag <hr> darfst du hier explizit nicht verwenden.
-    */
 }
 
+/*Trenner von Rezensionen*/
+.line {
+  display: inline-block;
+  width: 100%;
+  border-top: 2px solid rgb(126, 126, 126);
+}
