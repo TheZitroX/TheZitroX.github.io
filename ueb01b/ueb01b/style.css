@@ -3,42 +3,23 @@
     title:      Bischen testen
     author:     John Lienau
     version:    v0.1
-    date:       17.05.2022
+    date:       24.05.2022
     copyright:  Copyright (c) 2022
 
     brief:      ...
 */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 body {
     padding: 2em;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat';
+    background-color: rgb(255, 255, 255);
 }
 
-li {
-    list-style: none;
-}
-.footerIcons {
-    width: 16px;
-}
 footer {
     text-align:center;
     opacity:0.6;
-}
-
-.blockEntry:first-letter {
-	font-size: 2em;
-}
-
-.ProduktDesignation {
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.productPicture {
-    width:100%;
-    max-width:400px;
 }
 
 ul {
@@ -46,61 +27,113 @@ ul {
     margin: 1em;
 }
 
+li {
+    list-style: none;
+}
+
+.footerIcons {
+    width: 16px;
+}
+
+/* NAVIGATION */
+.flexboxInPageNavigation {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 10%;
+    row-gap: 1em;
+    flex-wrap: wrap;
+}
 .inPageNavigation {
-    background-color:  #800080;
-    color: #23ada4;
+    border-radius: 30em;
+    flex-grow: 1;
+
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+
+    background-color:  #ffaec9;
     padding: 1em;
     display: inline;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 .inPageNavigation:hover {
-    background-color:  #800000;
-    color: #23ada4;
-    padding: 1em;
-    display: inline;
-    border: 1px solid black;
+    background-color:  #ffc90e;
 }
+/* ================================================== */
 
 section {
     margin-top: 1em;
     margin-bottom: 1em;
 }
 section:last-of-type {
-    margin-top: 1em;
     margin-bottom: 0em;
 }
 section:first-of-type {
     margin-top: 0em;
-    margin-bottom: 1em;
 }
 
 .topLogo {
     width: 100%;
 }
+/* ================================================== */
 
-.produktKachel ul li{
+/* PRODUCTLIST */
+.produktList a {
+    text-decoration: none;
+    color: black;
+}
+
+.produktList a:first-of-type div {
+    border-radius: 0em 5em 0em 0em;
+}
+
+.produktKachel{
     border: 2px solid black;
     padding: 3px;
     margin-bottom: 3px;
 }
 
-.produktKachel ul li:hover{
+.produktKachel:hover {
     border: 2px dashed #47b82e;
     background-color: #eeeeee;
-    padding: 3px;
-    margin-bottom: 3px;
-
 }
 
-.produktKachel ul li h3 {
+.produktKachel h3 {
     text-align: center;
 }
 
-.Rezension {
-    border-top: palevioletred;
-    /*Die Rezensionen von der Produktdetailseite sollen von horizontalen Strichen abgegrenzt werden. 
-    Verwende dafür ausschließlich CSS-Eigenschaften. Das HTML-Tag <hr> darfst du hier explizit nicht verwenden.
-    */
+.productDesignation {
+    text-transform: uppercase;
 }
 
+.productPicture {
+    width:100%;
+    max-width:400px;
+}
+
+.blockEntry {
+    font-size: 1.3em;
+}
+
+.blockEntry:first-letter {
+	font-size: 2em;
+}
+/* ================================================== */
+
+/* REZENSIONEN */
+.Rezension {
+    border-top: palevioletred;
+}
+
+/*Trenner von Rezensionen*/
+.line {
+  display: inline-block;
+  width: 100%;
+  border-top: 2px solid rgb(126, 126, 126);
+}
+/* ================================================== */
