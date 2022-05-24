@@ -4,7 +4,7 @@
     author:     John Lienau (zitrie@gmx.de),
                 Tobias Pinnau
     version:    v1.0
-    date:       17.05.2022
+    date:       24.05.2022
     copyright:  (c) Copyright 2022
 
     brief:      shows all shop productis
@@ -22,18 +22,17 @@
     <title>Professional online-shop</title>
 </head>
 <body>
-    <article>
+    <header>
         <a href="../index.html"><img class="topLogo" src="../public/images/icons/logo.png" alt=""></a>
-        <h1>Welcome to the our Productkatalog :D</h1>
-        <p>This website contains a wide number of animals and witches pictures you can buy.</p>
+    </header>
 
-        <!--Übersicht-->
-        <div>
-            <ul>
-                <li><a href="#Produktempfehlung">Produktempfehlung</a></li>
+    <!--Übersicht-->
+    <nav>
+        <div class="flexboxInPageNavigation">
+                <a class="inPageNavigation" href="#Produktempfehlung">Produktempfehlung</a>
 
-                <li><a href="#Produktlist">Produktlist</a>
-                    <ul>
+                <a class="inPageNavigation" href="#Produktlist">Produktlist</a>
+                    <!-- <ul>
                         <li><a href="#Snake"> Snake </a></li>
                         <li><a href="#Eichhoernchen"> Eichhörnchen </a></li>
                         <li><a href="#Giraffe"> Giraffe </a></li>
@@ -41,153 +40,162 @@
                         <li><a href="#Schildkröte">  Schildkröte </a></li>
                         <li><a href="#Einhorn"> Einhorn </a></li>
                         <li><a href="#Zaubererin">  Zauberer*in </a></li>
-                    </ul>
-                </li>
-            </ul>
+                    </ul> -->
         </div>
+    </nav>
+
+    <main>
+        <h1>Welcome to the our Productkatalog :D</h1>
+        <p>This website contains a wide number of animals and witches pictures you can buy.</p>
 
         <!--Produktempfehlung-->
-        <Section class="produktKachel">
-            
-            <h2><span id="Produktempfehlung">Produktempfehlung</span></h2>
-            <ul>
-                <li href="Produktdetailsicht.html">
-                    <h2>Snake:</h2>
-                    <a><img class="productPicture" src="../public/images/articles/Snake.png" alt=""></a>
-                    <h3>Preis: VB</h3>
-                    <p>This snake will eat all you mice in your house. <q>Works good!</q></p>
-                    <br>
-                </li>
+        <h2><span id="Produktempfehlung">Produktempfehlung</span></h2>
 
-                <li href="Produktdetailsicht.html">
-                    <h2>Eichhörnchen:</h2>
-                    <a><img class="productPicture" src="../public/images/articles/eichhoernchen.png" alt=""></a>
+        <Section class="produktList">
+            <a href="Produktdetailsicht.html">
+                <div class="produktKachel">
+                    <h2 class="productDesignation">Snake:</h2>
+                    <img class="productPicture" src="../public/images/articles/Snake.png" alt="">
                     <h3>Preis: VB</h3>
-                    <p>
+                    <p class="blockEntry">This snake will eat all you mice in your house. <q>Works good!</q></p>
+                </div>
+            </a>
+
+            <a href="Produktdetailsicht.html">
+                <div class="produktKachel">
+                    <h2 class="productDesignation">Eichhörnchen:</h2>
+                    <img class="productPicture" src="../public/images/articles/eichhoernchen.png" alt="">
+                    <h3>Preis: VB</h3>
+                    <p class="blockEntry">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum.
                         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </p>
-                    <br>
-                </li>
+                </div>
+            </a>
 
-                <li href="Produktdetailsicht.html">
-                    <h2>Giraffe:</h2>
-                    <a><img class="productPicture" src="../public/images/articles/giraffe.png" alt=""></a>
+            <a href="Produktdetailsicht.html">
+                <div class="produktKachel">
+                    <h2 class="productDesignation">Giraffe:</h2>
+                    <img class="productPicture" src="../public/images/articles/giraffe.png" alt="">
                     <h3>Preis: VB</h3>
-                    <p>
+                    <p class="blockEntry">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum.
                         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </p>
-                    <br>
-                </li>
-            </ul>
+                </div>
+            </a>
         </Section>
 
-        <!--Article-->
-        <section class="produktKachel">
-            <h2><span id="Produktlist">Alle Produkte</span></h2>
+        <!--Article-List-->
+        <h2><span id="Produktlist">Alle Produkte</span></h2>
 
-            <ul>
-                <li href="Produktdetailsicht.html">
-                    <h2><span id="Snake">Snake:</span></h2>
-                    <a><img class="productPicture" src="../public/images/articles/Snake.png" alt=""></a>
-                    <h3>Preis: VB</h3>
-                    <p>This snake will eat all you mice in your house. <q>Works good!</q></p>
-                    <br>
-                </li>
+        <section class="produktList">
+                <a href="Produktdetailsicht.html">
+                    <div class="produktKachel">
+                        <h2 class="productDesignation"><span id="Snake">Snake:</span></h2>
+                        <img class="productPicture" src="../public/images/articles/Snake.png" alt="">
+                        <h3>Preis: VB</h3>
+                        <p class="blockEntry">This snake will eat all you mice in your house. <q>Works good!</q></p>
+                    </div>
+                </a>
 
-                <li href="Produktdetailsicht.html">
-                    <h2><span id="Eichhoernchen">Eichhörnchen:</span></h2>
-                    <a><img class="productPicture" src="../public/images/articles/eichhoernchen.png" alt=""></a>
-                    <h3>Preis: VB</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
-                    <br>
-                </li>
+                <a href="Produktdetailsicht.html">
+                    <div class="produktKachel">
+                        <h2 class="productDesignation"><span id="Eichhoernchen">Eichhörnchen:</span></h2>
+                        <img class="productPicture" src="../public/images/articles/eichhoernchen.png" alt="">
+                        <h3>Preis: VB</h3>
+                        <p class="blockEntry">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </a>
 
-                <li href="Produktdetailsicht.html">
-                    <h2><span id="Giraffe">Giraffe:</span></h2>
-                    <a><img class="productPicture" src="../public/images/articles/giraffe.png" alt=""></a>
-                    <h3>Preis: VB</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
-                    <br>
-                </li>
+                <a href="Produktdetailsicht.html">
+                    <div class="produktKachel">
+                        <h2 class="productDesignation"><span id="Giraffe">Giraffe:</span></h2>
+                        <a><img class="productPicture" src="../public/images/articles/giraffe.png" alt=""></a>
+                        <h3>Preis: VB</h3>
+                        <p class="blockEntry">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </a>
 
-                <li href="Produktdetailsicht.html">
-                    <h2><span id="Pinguin">Pinguin:</span></h2>
-                    <a><img class="productPicture" src="../public/images/articles/pinguin.png" alt=""></a>
-                    <h3>Preis: VB</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
-                    <br>
-                </li>
+                <a href="Produktdetailsicht.html">
+                    <div class="produktKachel">
+                        <h2 class="productDesignation"><span id="Pinguin">Pinguin:</span></h2>
+                        <img class="productPicture" src="../public/images/articles/pinguin.png" alt="">
+                        <h3>Preis: VB</h3>
+                        <p class="blockEntry">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </a>
 
-                <li href="Produktdetailsicht.html">
-                    <h2><span id="Schildkröte">Schildkröte:</span></h2>
-                    <a><img class="productPicture" src="../public/images/articles/Schildkröte.png" alt=""></a>
-                    <h3>Preis: VB</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
-                    <br>
-                </li>
+                <a href="Produktdetailsicht.html">
+                    <div class="produktKachel">
+                        <h2 class="productDesignation"><span id="Schildkröte">Schildkröte:</span></h2>
+                        <img class="productPicture" src="../public/images/articles/Schildkröte.png" alt="">
+                        <h3>Preis: VB</h3>
+                        <p class="blockEntry">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </a>
 
-                <li href="Produktdetailsicht.html">
-                    <h2><span id="Einhorn">Einhorn:</span></h2>
-                    <a><img class="productPicture" src="../public/images/articles/einhorn.png" alt=""></a>
-                    <h3>Preis: VB</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
-                    <br>
-                </li>
+                <a href="Produktdetailsicht.html">
+                    <div class="produktKachel">
+                        <h2 class="productDesignation"><span id="Einhorn">Einhorn:</span></h2>
+                        <img class="productPicture" src="../public/images/articles/einhorn.png" alt="">
+                        <h3>Preis: VB</h3>
+                        <p class="blockEntry">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </a>
 
-                <li href="Produktdetailsicht.html">
-                    <h2><span id="Zaubererin">Zauberer*in:</span></h2>
-                    <a><img class="productPicture" src="../public/images/articles/zaubererIn.png" alt=""></a>
-                    <h3>Preis: VB</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
-                    <br>
-                </li>
-            </ul>
+                <a href="Produktdetailsicht.html">
+                    <div class="produktKachel">
+                        <h2 class="productDesignation"><span id="Zaubererin">Zauberer*in:</span></h2>
+                        <img class="productPicture" src="../public/images/articles/zaubererIn.png" alt="">
+                        <h3>Preis: VB</h3>
+                        <p class="blockEntry">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </a>
         </section>
-    </article>
+    </main>
 
     <!--Sidebar-->
     <footer>

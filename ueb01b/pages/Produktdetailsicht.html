@@ -4,7 +4,7 @@
     author:     John Lienau (zitrie@gmx.de),
                 Tobias Pinnau
     version:    v0.1
-    date:       05.05.2022
+    date:       24.05.2022
     copyright:  (c) Copyright 2022
 
     brief:      Zeigt ein Produkt mit Details
@@ -23,16 +23,13 @@
 </head>
 <body>
     <div>
-        <a href="../index.html"><img src="../public/images/icons/logo.png" alt="" style="width:100%"></a>
+        <a href="../index.html"><img class="topLogo" src="../public/images/icons/logo.png" alt=""></a>
 
-        <section>
-            <h3>Bereiche:</h3>
+        <div class="flexboxInPageNavigation">
+                <a class="inPageNavigation" href="#Produkt">Eichhörnchen</a>
 
-            <ul>
-                <li><a href="#Produkt"> Eichhörnchen </a></li>
-                <li><a href="#Rezension"> Rezension </a></li>
-            </ul>
-        </section>
+                <a class="inPageNavigation" href="#Rezension">Rezension</a>
+        </div>
 
         <section>
             <h2><span id="Produkt">Eichhörnchen:</span></h2>
@@ -100,7 +97,7 @@
             <h2>Navigation</h2>
             <ul>
                 <li><img class="footerIcons" src="../public/images/icons/StartSeite.png" alt=""><a href="../index.html">Home</a></li>
-                <li><img class="footerIcons" src="../public/images/icons/Wahrenkorb.png" alt=""><a>Product List</a></li>
+                <li><img class="footerIcons" src="../public/images/icons/Wahrenkorb.png" alt=""><a href="../pages/Produktübersicht.html">Product List</a></li>
                 <li><a href="Impressum_und_Datenschutzerklärung.html">Impressum und Datenschutzerklärung</a></li>
             </ul>
         </section>

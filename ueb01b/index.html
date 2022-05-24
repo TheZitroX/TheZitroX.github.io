@@ -4,7 +4,7 @@
     author:     John Lienau (zitrie@gmx.de),
                 Tobias Pinnau
     version:    v1.0
-    date:       17.05.2022
+    date:       24.05.2022
     copyright:  (c) Copyright 2022
 
     brief:      shows a list of content (sub sites)
@@ -18,23 +18,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="public/images/icons/tabIcon.png">
     
     <title>Professional online-shop</title>
 </head>
 <body>
-    <article>
-        <!--Welcome Hadder-->
-        <img src="public/images/icons/logo.png" alt="" style="width:100%">
-        <h1>Welcome to our website!</h1>
+    <!--Welcome Hadder-->
+    <header>
+        <img class="topLogo" src="public/images/icons/logo.png" alt="">
+    </header>
 
-        <!--Übersicht-->
+    <!--Übersicht-->
+    <nav>
         <div class="flexboxInPageNavigation">
-            <ul>
-                <li class="inPageNavigation"><a href="#Unsere_Mutivation">Unsere Mutivation</a></li>
+            <a class="inPageNavigation" href="#Unsere_Mutivation">Unsere Mutivation</a>
 
-                <li class="inPageNavigation"><a href="#Produktempfehlung">Produktempfehlung</a></li>
-            </ul>
+            <a class="inPageNavigation" href="#Produktempfehlung">Produktempfehlung</a>
         </div>
+    </nav>
+
+    <main>
+        <h1>Welcome to our website!</h1>
 
         <!--Unsere Mutivation-->
         <section>
@@ -48,20 +52,22 @@
         </section>
 
         <!--Produktemphehlung-->
-        <Section class="produktKachel">
-            <h2><span id="Produktempfehlung">Produktempfehlung</span></h2>
-            <ul>
-                <li href="pages/Produktdetailsicht.html">
+        <h2><span id="Produktempfehlung">Produktempfehlung</span></h2>
+
+        <Section class="produktList">
+            <a href="pages/Produktdetailsicht.html">
+                <div class="produktKachel">
                     <h2 class="productDesignation">Snake:</h2>
-                    <a><img class="productPicture" src="public/images/articles/Snake.png" alt=""></a>
+                    <img class="productPicture" src="public/images/articles/Snake.png" alt="">
                     <h3>Preis: VB</h3>
                     <p class="blockEntry">This snake will eat all you mice in your house. <q>Works good!</q></p>
-                    <br>
-                </li>
+                </div>
+            </a>
 
-                <li href="pages/Produktdetailsicht.html">
+            <a href="pages/Produktdetailsicht.html">
+                <div class="produktKachel">
                     <h2 class="productDesignation">Eichhörnchen:</h2>
-                    <a><img class="productPicture" src="public/images/articles/eichhoernchen.png" alt=""></a>
+                    <img class="productPicture" src="public/images/articles/eichhoernchen.png" alt="">
                     <h3>Preis: VB</h3>
                     <p class="blockEntry">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -70,12 +76,13 @@
                         At vero eos et accusam et justo duo dolores et ea rebum.
                         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </p>
-                    <br>
-                </li>
+                </div>
+            </a>
 
-                <li href="pages/Produktdetailsicht.html">
+            <a href="pages/Produktdetailsicht.html">
+                <div class="produktKachel">
                     <h2 class="productDesignation">Giraffe:</h2>
-                    <a><img class="productPicture" src="public/images/articles/giraffe.png" alt=""></a>
+                    <img class="productPicture" src="public/images/articles/giraffe.png" alt="">
                     <h3>Preis: VB</h3>
                     <p class="blockEntry">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -84,12 +91,10 @@
                         At vero eos et accusam et justo duo dolores et ea rebum.
                         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </p>
-                    <br>
-                </li>
-            </ul>
-
+                </div>
+            </a>
         </Section>
-    </article>
+    </main>
 
     <!--Sidebar-->
     <footer>
